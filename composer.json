@@ -1,11 +1,17 @@
 {
-    "name": "driver/php-project-lvl1",
-    "description": "Brain games CLI app",
+    "name": "matveevsa/php-project-lvl1",
+    "type": "library",
+    "description": "The Brain Games is a training project",
+    "homepage": "https://github.com/matveevsa/php-project-lvl1",
     "authors": [
         {
             "name": "Matveev S.",
             "email": "matveevsa987@gmail.com"
         }
+    ],
+    "license": "MIT",
+    "bin":[
+        "bin/brain-games"
     ],
     "require": {}
 }
