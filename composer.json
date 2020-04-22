@@ -1,0 +1,11 @@
+{
+    "name": "driver/php-project-lvl1",
+    "description": "Brain games CLI app",
+    "authors": [
+        {
+            "name": "Matveev S.",
+            "email": "matveevsa987@gmail.com"
+        }
+    ],
+    "require": {}
+}
