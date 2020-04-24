@@ -12,6 +12,9 @@ use function BrainGames\Engine\startGame;
 use function BrainGames\BrainEven\brainEven;
 
 $message = 'Answer "yes" if the number is even, otherwise answer "no".';
-$brainEven = 'brainEven';
+
+$brainEven = function () {
+    return brainEven();
+};
 
 startGame($brainEven, $message);
