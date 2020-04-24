@@ -13,6 +13,6 @@ use function BrainGames\BrainCalc\brainCalc;
 
 $message = 'What is the result of the expression?';
 
-[$question, $correctAnswer] = brainCalc();
+[$questionCalc, $correctAnswer] = brainCalc();
 
-startGame($question, $correctAnswer, $message);
+startGame($questionCalc, $correctAnswer, $message);
