@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function startGame($typeGame, $message, $attempts = 3)
+function startGame(&$typeGame, $message, $attempts = 3)
 {
     line('Welcome to the Brain Games!');
     line($message . "\n");
