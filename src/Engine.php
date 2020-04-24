@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function startGame($question, $correctAnswer, $message, $attempts = 3)
+function startGame($typeGame, $message, $attempts = 3)
 {
     line('Welcome to the Brain Games!');
     line($message . "\n");
@@ -13,6 +13,7 @@ function startGame($question, $correctAnswer, $message, $attempts = 3)
     line("Hello, %s!\n", $name);
 
     for ($i = 0; $i < $attempts; $i += 1) {
+        [$question, $correctAnswer] = $typeGame();
         line('Question: %d', $question);
         $answer = prompt("Your answer");
         if ($answer === $correctAnswer) {

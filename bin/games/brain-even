@@ -13,6 +13,4 @@ use function BrainGames\BrainEven\brainEven;
 
 $message = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-[$questionEven, $correctAnswer] = brainEven();
-
-startGame($questionEven, $correctAnswer, $message);
+startGame('brainEven', $message);
