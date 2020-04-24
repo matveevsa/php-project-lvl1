@@ -11,7 +11,7 @@ if (file_exists($autoloadPath1)) {
 use function BrainGames\Engine\startGame;
 use function BrainGames\BrainGcd\brainGcd;
 
-$message = 'What is the result of the expression?';
+$message = 'Find the greatest common divisor of given numbers.';
 
 $brainGcd = function () {
     return brainGcd();

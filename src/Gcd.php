@@ -15,7 +15,7 @@ function gcd($a, $b)
     return ($a + $b);
 }
 
-function brainGcd($minNumber = 0, $maxNumber = 200)
+function brainGcd($minNumber = 0, $maxNumber = 30)
 {
     $num1 = rand($minNumber, $maxNumber);
     $num2 = rand($minNumber, $maxNumber);
