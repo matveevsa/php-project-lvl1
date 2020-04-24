@@ -11,6 +11,8 @@ if (file_exists($autoloadPath1)) {
 use function BrainGames\Engine\startGame;
 use function BrainGames\BrainEven\brainEven;
 
+$game = 'brainEven';
+
 $message = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-startGame('brainEven', $message);
+startGame($game, $message);
