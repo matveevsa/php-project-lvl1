@@ -32,5 +32,5 @@ function brainCalc($minNumber = 0, $maxNumber = 20)
             print_r('Error! Unknow operation!');
     }
 
-    return [$question, $correctAnswer];
+    return [$question, (string) $correctAnswer];
 }
