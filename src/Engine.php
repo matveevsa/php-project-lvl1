@@ -8,8 +8,8 @@ use function cli\prompt;
 function startGame($question, $correctAnswer, $message, $attempts = 3)
 {
     line('Welcome to the Brain Games!');
-    line($message);
-    $name = prompt('May I have your name?');
+    line($message . "\n");
+    $name = prompt("May I have your name?");
     line("Hello, %s!\n", $name);
 
     for ($i = 0; $i < $attempts; $i += 1) {
