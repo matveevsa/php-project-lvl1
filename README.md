@@ -11,3 +11,7 @@
 #### Brain-Calc
 
 [![asciicast](https://asciinema.org/a/OwjRR9f87cE3wMr7iWqvTvg0X.svg)](https://asciinema.org/a/OwjRR9f87cE3wMr7iWqvTvg0X)
+
+#### Brain-Gcd
+
+[![asciicast](https://asciinema.org/a/y77Wn5BTdkhd1UMma8OORRJCs.svg)](https://asciinema.org/a/y77Wn5BTdkhd1UMma8OORRJCs)
