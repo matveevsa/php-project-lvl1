@@ -14,7 +14,7 @@ function startGame($typeGame, $message, $attempts = 3)
 
     for ($i = 0; $i < $attempts; $i += 1) {
         [$question, $correctAnswer] = $typeGame();
-        line('Question: %s', $question);
+        line("Question: {$question}");
         $answer = prompt("Your answer");
         if ($answer === $correctAnswer) {
             line('Correct!');
