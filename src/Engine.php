@@ -4,6 +4,8 @@ namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
+use function BrainGames\BrainCalc\brainCalc;
+use function BrainGames\BrainEven\brainEven;
 
 function startGame($typeGame, $message, $attempts = 3)
 {
