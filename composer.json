@@ -21,7 +21,8 @@
     },
     "bin":[
         "bin/games/brain-even",
-        "bin/games/brain-calc"
+        "bin/games/brain-calc",
+        "bin/games/brain-gcd"
     ],
     "require": {
         "wp-cli/php-cli-tools": "^0.11.11"
