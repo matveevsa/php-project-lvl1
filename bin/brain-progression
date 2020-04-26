@@ -11,7 +11,7 @@ if (file_exists($autoloadPath1)) {
 use function BrainGames\Engine\startGame;
 use function BrainGames\BrainProgression\brainProgression;
 
-$message = 'Find the greatest common divisor of given numbers.';
+$message = 'What number is missing in the progression?';
 
 $brainProgression = function () {
     return brainProgression();

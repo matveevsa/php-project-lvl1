@@ -17,5 +17,5 @@ function brainProgression()
     $correctAnswer = $firstElement + $step * $secretElement;
     $question = implode(' ', $progression);
 
-    return [$question, $correctAnswer];
+    return [$question, (string) $correctAnswer];
 }
