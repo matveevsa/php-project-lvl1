@@ -15,11 +15,11 @@ function startGame($typeGame, $message, $attempts = 3)
     for ($i = 0; $i < $attempts; $i += 1) {
         [$question, $correctAnswer] = $typeGame();
         line("Question: {$question}");
-        $answer = prompt("Your answer");
-        if ($answer === $correctAnswer) {
+        $userAnswer = prompt("Your answer");
+        if ($userAnswer === $correctAnswer) {
             line('Correct!');
         } else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
+            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
             return line("Let's try again,%s!", $name);
         }
     }

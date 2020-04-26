@@ -29,7 +29,7 @@ function brainCalc($minNumber = 0, $maxNumber = 20)
             $correctAnswer = $num1 * $num2;
             break;
         default:
-            print_r('Error! Unknow operation!');
+            print_r('Error! Unknown operator!');
     }
 
     return [$question, (string) $correctAnswer];
