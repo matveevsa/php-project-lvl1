@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-$autoloadPath1 = __DIR__ . '/../../../../autoload.php';
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../autoload.php';
 if (file_exists($autoloadPath1)) {
     require_once $autoloadPath1;
@@ -9,12 +9,12 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function BrainGames\Engine\startGame;
-use function BrainGames\BrainGcd\brainGcd;
+use function BrainGames\BrainProgression\brainProgression;
 
 $message = 'Find the greatest common divisor of given numbers.';
 
-$brainGcd = function () {
-    return brainGcd();
+$brainProgression = function () {
+    return brainProgression();
 };
 
-startGame($brainGcd, $message);
+startGame($brainProgression, $message);
