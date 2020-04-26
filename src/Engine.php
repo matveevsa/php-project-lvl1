@@ -20,9 +20,11 @@ function startGame($typeGame, $message, $attempts = 3)
             line('Correct!');
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
-            return line("Let's try again,%s!", $name);
+            line("Let's try again,%s!", $name);
+            return null;
         }
     }
 
-    return line('Congratulations, %s!', $name);
+    line('Congratulations, %s!', $name);
+    return null;
 }
