@@ -2,11 +2,12 @@
 
 namespace BrainGames\BrainCalc;
 
-function brainCalc($minNumber = 0, $maxNumber = 20)
+use function BrainGames\Engine\startGame;
+
+function getQuestionAndAnswer($minNumber = 0, $maxNumber = 20)
 {
     $operators = ['+', '-', '*'];
-    $countOperators = count($operators) - 1;
-    $randomIndex = rand(0, $countOperators);
+    $randomIndex = array_rand($operators);
     $operator = $operators[$randomIndex];
 
     $num1 = rand($minNumber, $maxNumber);
@@ -17,20 +18,28 @@ function brainCalc($minNumber = 0, $maxNumber = 20)
 
     switch ($operator) {
         case '+':
-            $question = "{$num1} + {$num2}";
             $correctAnswer = $num1 + $num2;
             break;
         case '-':
-            $question = "{$num1} - {$num2}";
             $correctAnswer = $num1 - $num2;
             break;
         case '*':
-            $question = "{$num1} * {$num2}";
             $correctAnswer = $num1 * $num2;
             break;
         default:
-            print_r('Error! Unknown operator!');
+            return null;
     }
+    $question = "{$num1} {$operator} {$num2}";
 
     return [$question, (string) $correctAnswer];
+}
+
+function startBrainCalc()
+{
+    $message = 'What is the result of the expression?';
+    $getQuestionAndAnswer = function () {
+        return getQuestionAndAnswer();
+    };
+
+    return startGame($getQuestionAndAnswer, $message);
 }

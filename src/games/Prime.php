@@ -2,6 +2,8 @@
 
 namespace BrainGames\BrainPrime;
 
+use function BrainGames\Engine\startGame;
+
 function isPrime($num)
 {
     if ($num <= 1) {
@@ -17,11 +19,21 @@ function isPrime($num)
     return true;
 }
 
-function brainPrime($minNumber = 0, $maxNumber = 100)
+function getQuestionAndAnswer($minNumber = 0, $maxNumber = 100)
 {
     $question = rand($minNumber, $maxNumber);
     $isPrime = isPrime($question);
     $correctAnswer = $isPrime ? 'yes' : 'no';
 
     return [$question, $correctAnswer];
+}
+
+function startBrainPrime()
+{
+    $message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    $getQuestionAndAnswer = function () {
+        return getQuestionAndAnswer();
+    };
+
+    return startGame($getQuestionAndAnswer, $message);
 }
