@@ -13,8 +13,7 @@ function getQuestionAndAnswer($minNumber = 0, $maxNumber = 20)
     $num1 = rand($minNumber, $maxNumber);
     $num2 = rand($minNumber, $maxNumber);
 
-    $question = null;
-    $correctAnswer = null;
+    $question = "{$num1} {$operator} {$num2}";
 
     switch ($operator) {
         case '+':
@@ -29,7 +28,6 @@ function getQuestionAndAnswer($minNumber = 0, $maxNumber = 20)
         default:
             return null;
     }
-    $question = "{$num1} {$operator} {$num2}";
 
     return [$question, (string) $correctAnswer];
 }
